@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.app.utility.FootBall.java&apos; to &apos;FootBallCoach.java&apos;&#x0D;&#x0A;- Original project: &apos;02_06_SpringRest&apos;&#x0D;&#x0A;- Original element: &apos;com.app.utility.FootBall.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.app.utility.FootBallCoach.java&apos;" description="Rename compilation unit &apos;FootBall.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.app.utility{FootBall.java" name="FootBallCoach.java" references="false" stamp="1780410914110" version="1.0"/>
+</session>

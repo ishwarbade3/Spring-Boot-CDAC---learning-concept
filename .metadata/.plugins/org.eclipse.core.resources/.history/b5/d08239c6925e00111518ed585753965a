@@ -1,0 +1,9 @@
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public FootBallCoach footBallCoach() {
+        return new FootBallCoach();
+    }
+
+}

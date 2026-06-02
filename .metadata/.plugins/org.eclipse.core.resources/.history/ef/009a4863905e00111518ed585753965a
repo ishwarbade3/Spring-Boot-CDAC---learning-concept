@@ -1,0 +1,17 @@
+package com.app.utility;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class FootBallCoach implements Coach {
+
+	@Override
+	public String getWorkOut() {
+		return "running sprint football";
+	}
+	
+	public FootBall
+	
+	
+
+}

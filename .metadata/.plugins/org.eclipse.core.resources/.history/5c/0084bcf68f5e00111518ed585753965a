@@ -1,0 +1,11 @@
+package com.app.utility;
+
+public class BadmintonCoach implements Coach {
+
+	@Override
+	public String getWorkOut() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
