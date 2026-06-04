@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 
 <head>
 	<style>
@@ -20,11 +20,16 @@
 		<div th:if="${param.error}">
 			<i colour="red">Sorry! You Entered invalid Password</i>
 		</div>
+		<div th:if="${param.logout}">
+			<i colour="red">You have been logged out!!!</i>
+		</div>
 		User-Name <br>
 
 		<input type="text" name="username" placeholder="username">
 		<br> <br>Password<br><input type="text" name="password" placeholder="password"><br><br>
 		<input type="Submit" value="Login">
+		
+		
 
 
 	</form>
