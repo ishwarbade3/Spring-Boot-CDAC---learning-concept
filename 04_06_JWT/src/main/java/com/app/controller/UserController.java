@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.entity.User;
+import com.app.service.JwtService;
 import com.app.service.UserService;
 
 @RestController
@@ -40,13 +41,16 @@ public class UserController {
 
 	@Autowired
 	AuthenticationManager authenticationManager;
+	@Autowired
+	private JwtService jwtService;
 
 	@PostMapping("/login")
 	public String login(@RequestBody User user) {
 		Authentication authentication = authenticationManager
 				.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
 		if(authentication.isAuthenticated()) {
-			return "Sucessfull Login";
+			return jwtService.generateToken(user.getUsername());
+			//return "Sucessfull Login";
 		}else {
 			return "Failed to Login";
 		}
